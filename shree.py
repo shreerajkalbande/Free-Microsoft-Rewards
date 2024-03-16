@@ -21,13 +21,13 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=22&id=264960&wreply=https%3a%2f%2fwww.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fwww.bing.com%253a443%252frewards%252fsignin%253fru%253d%25252frewards%25252fdashboard%2526vt%253dSignin%2526ra%253d%26sig%3d1F6DD7F086C5692437CFC3CE87C3686B%26nopa%3d2&wp=MBI_SSL&lc=1033&CSRFToken=8d0d1757-7e53-4a61-acdf-c00fd8ec2dd4&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&nopa=2&lw=1&fl=easi2")
 
 # wait for email field and enter email
-WebDriverWait(driver, 10).until(EC.element_to_be_clickable(EMAILFIELD)).send_keys("your Outlook mail")
+WebDriverWait(driver, 10).until(EC.element_to_be_clickable(EMAILFIELD)).send_keys("YOUR MICROSOFT EMAIL")
 
 # Click Next
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
 
 # wait for password field and enter password
-WebDriverWait(driver, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys("password")
+WebDriverWait(driver, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys("PASSWORD")
 
 # Click Login - same id?
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
